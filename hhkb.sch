@@ -228,7 +228,7 @@ U 1 1 58AB1D58
 P 5050 8050
 F 0 "J1" H 4650 8000 60  0000 C CNN
 F 1 "USB_mini_micro_B" H 4900 8300 60  0001 C CNN
-F 2 "keyboard_parts:USB_miniB_hirose_5ST_hand" H 5000 8050 60  0001 C CNN
+F 2 "keyboard_parts:USB_miniB_hirose_5S8" H 5000 8050 60  0001 C CNN
 F 3 "" H 5000 8050 60  0000 C CNN
 	1    5050 8050
 	1    0    0    -1  

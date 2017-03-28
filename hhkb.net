@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source /home/hwan/Documents/woodcarve-hhkb/pcb/hhkb.sch)
-    (date "2017年03月27日 03時23分45秒")
+    (source /home/hwan/Documents/hhkb-pcb/hhkb.sch)
+    (date "2017年03月29日 04時18分22秒")
     (tool "Eeschema 4.0.6-e0-6349~53~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -77,7 +77,7 @@
       (tstamp 58AB1AE4))
     (comp (ref J1)
       (value USB_mini_micro_B)
-      (footprint keyboard_parts:USB_miniB_hirose_5ST_hand)
+      (footprint keyboard_parts:USB_miniB_hirose_5S8)
       (libsource (lib keyboard_parts) (part USB_mini_micro_B))
       (sheetpath (names /) (tstamps /))
       (tstamp 58AB1D58))
@@ -948,7 +948,7 @@
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib))
     (library (logical keyboard_parts)
-      (uri /home/hwan/Documents/woodcarve-hhkb/pcb/kicad_lib_tmk/keyboard_parts.lib)))
+      (uri /home/hwan/Documents/hhkb-pcb/kicad_lib_tmk/keyboard_parts.lib)))
   (nets
     (net (code 1) (name "Net-(\"2\"1-Pad2)")
       (node (ref "\"2\"1") (pin 2))
