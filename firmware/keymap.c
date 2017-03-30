@@ -3,7 +3,7 @@
 /*
  * HHKB Layout
  */
-const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
+const uint8_t PROEMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* 0: Default layer
      * ,-----------------------------------------------------------.
      * |Esc|  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  =|  \|  `|
@@ -48,6 +48,6 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
 /*
  * Fn action definition
  */
-const action_t fn_actions[] = {
+const action_t PROGMEM fn_actions[] = {
     [0] = ACTION_LAYER_MOMENTARY(1),
 };
