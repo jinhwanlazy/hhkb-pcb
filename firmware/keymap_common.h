@@ -32,15 +32,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "keymap.h"
 
 
-extern const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS];
-extern const action_t fn_actions[];
-
 #define KEYMAP( \
     K00, K01, K02, K03, K04, K05, K15, K26, K16, K06, K07, K08, K09, K0A, K0B, \
     K10,    K11, K12, K13, K14, K25, K35, K36, K27, K17, K18, K19, K1A,   K1B, \
     K20,      K21, K22, K23, K24, K34, K44, K46, K37, K28, K29, K2A,      K2B, \
     K40,       K30, K31, K32, K33, K43, K47, K48, K49, K38, K39,    K3A,  K3B, \
-            K41, K42,                  K45,              K4A, K4B                 \
+            K41, K42,                  K45,              K4A, K4B              \
 ) { \
     { KC_##K00, KC_##K01, KC_##K02, KC_##K03, KC_##K04, KC_##K05, KC_##K06, KC_##K07, KC_##K08, KC_##K09, KC_##K0A, KC_##K0B }, \
     { KC_##K10, KC_##K11, KC_##K12, KC_##K13, KC_##K14, KC_##K15, KC_##K16, KC_##K17, KC_##K18, KC_##K19, KC_##K1A, KC_##K1B }, \
