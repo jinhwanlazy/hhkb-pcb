@@ -28,7 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DESCRIPTION     Single_sided_happy_hacking_copy
 
 /* key matrix size */
-#define MATRIX_ROWS 10
+#define MATRIX_ROWS 5
 #define MATRIX_COLS 12
 
 /* define if matrix has ghost */
