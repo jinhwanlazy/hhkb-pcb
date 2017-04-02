@@ -91,10 +91,6 @@ matrix_row_t matrix_get_row(uint8_t row)
     return matrix[row];
 }
 
-/* Column pin configuration
- * col: 1   2   3   4   5   6   7   8   9   10  11  12 
- * pin: B0  B1  B2  D2  D3  D5  B4  B5  C6  F7  F6  F5
- */
 static void  init_cols(void)
 {
     DDRB  &= ~(1<<0 | 1<<1 | 1<<2 | 1<<4 | 1<<5 | 1<<5);
