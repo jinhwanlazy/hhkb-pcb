@@ -45,6 +45,10 @@ static void select_row(uint8_t row);
 
 void matrix_init(void)
 {
+    // JTAG disable for PORT F. write JTD bit twice within four cycles.
+    MCUCR |= (1<<JTD);
+    MCUCR |= (1<<JTD);
+
     // initialize row and col
     unselect_rows();
     init_cols();
@@ -97,8 +101,8 @@ static void  init_cols(void)
     PORTB |=  (1<<0 | 1<<1 | 1<<2 | 1<<4 | 1<<5 | 1<<5);
     DDRC  &= ~(1<<6);
     PORTC |=  (1<<6);
-    DDRD  &= ~(1<<2 | 1<<3);
-    PORTD |=  (1<<2 | 1<<3);
+    DDRD  &= ~(1<<2 | 1<<3 | 1<<5);
+    PORTD |=  (1<<2 | 1<<3 | 1<<5);
     DDRF  &= ~(1<<5 | 1<<6 | 1<<7);
     PORTF |=  (1<<5 | 1<<6 | 1<<7);
 }
@@ -136,8 +140,8 @@ static void unselect_rows(void)
     PORTC &= ~0b10000000;
     DDRD  &= ~0b11010000;
     PORTD &= ~0b11010000;
-    DDRF  &= ~0b00010010;
-    PORTF &= ~0b00010010;
+    DDRF  &= ~0b00010011;
+    PORTF &= ~0b00010011;
 }
 
 static void select_row(uint8_t row)
