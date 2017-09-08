@@ -1,4 +1,5 @@
 This branch contains a variant that uses only 1.5u modifiers and alps switchs.
+Also it doesn't cling to single sided artwork.
 
 # Features
 - Exactly same layout as original HHKB pro 2 (especially 6u space bar).
