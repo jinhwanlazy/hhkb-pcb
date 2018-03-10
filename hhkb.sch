@@ -228,7 +228,7 @@ U 1 1 58AB1D58
 P 5050 8050
 F 0 "J1" H 4650 8000 60  0000 C CNN
 F 1 "USB_mini_micro_B" H 4900 8300 60  0001 C CNN
-F 2 "keyboard_parts:USB_miniB_hirose_5ST_hand" H 5000 8050 60  0001 C CNN
+F 2 "keyboard_parts:USB_miniB_through_hole" H 5000 8050 60  0001 C CNN
 F 3 "" H 5000 8050 60  0000 C CNN
 	1    5050 8050
 	1    0    0    -1  
@@ -1793,16 +1793,6 @@ Wire Wire Line
 	5750 9100 6200 9100
 Wire Wire Line
 	6000 9200 6200 9200
-Wire Wire Line
-	6300 10800 6200 10800
-Wire Wire Line
-	6300 10700 6200 10700
-Wire Wire Line
-	6300 10600 6200 10600
-Wire Wire Line
-	6300 10500 6200 10500
-Wire Wire Line
-	6300 10400 6200 10400
 Connection ~ 7850 1800
 Connection ~ 4650 1800
 Connection ~ 3900 1800
@@ -2631,4 +2621,19 @@ Text Label 11650 1600 0    60   ~ 0
 ROW6
 Text Label 6200 8500 2    60   ~ 0
 ROW6
+Wire Wire Line
+	6300 10400 6200 10400
+Wire Wire Line
+	6300 10500 6200 10500
+Wire Wire Line
+	6300 10600 6200 10600
+Wire Wire Line
+	6300 10700 6200 10700
+Wire Wire Line
+	6300 10800 6200 10800
+NoConn ~ 6200 8600
+NoConn ~ 6200 8700
+NoConn ~ 6200 8800
+NoConn ~ 6200 8900
+NoConn ~ 8350 9300
 $EndSCHEMATC
