@@ -2621,16 +2621,6 @@ Text Label 11650 1600 0    60   ~ 0
 ROW6
 Text Label 6200 8500 2    60   ~ 0
 ROW6
-Wire Wire Line
-	6300 10400 6200 10400
-Wire Wire Line
-	6300 10500 6200 10500
-Wire Wire Line
-	6300 10600 6200 10600
-Wire Wire Line
-	6300 10700 6200 10700
-Wire Wire Line
-	6300 10800 6200 10800
 NoConn ~ 6200 8600
 NoConn ~ 6200 8700
 NoConn ~ 6200 8800
